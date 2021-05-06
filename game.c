@@ -243,13 +243,6 @@ void _updateBoard(GameState G)
     else G->currPlayer = RED;
     return;
 }
-void updateBoard(GameState G)
-{
-    G->turn++;
-    if(G->currPlayer == RED) G->currPlayer = BLACK;
-    else G->currPlayer = RED;
-    return;
-}
 
 //checks if the current player has any playable moves at all
 //uses code from moveAvailable more generally
